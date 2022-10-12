@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    margin: 10px auto;
+    padding: 10px;
+    height: 300px;
+    width: 1200px;
+    border: 1px solid #000000;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_bg{
+    width: 99.9%;
+    height: 55px;
+    background-image: linear-gradient(#53dae4,#53dae4);
+    margin-top: -5px;
+    border: 1px solid #000000;
+}
+#nav_div{
+    width: 1200px;
+    height: 48px;
+    margin: 0px auto;
+}
+.nav_a{
+    display: inline-block;
+    border: #000000 1px solid;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 85px;
+    height: 45px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    margin:3.5px 100px;
+    background-color: #d8d2d2;
+}
+.nav_a:hover{
+    color: #414c4d;
+}
+
+#content{
+    border: #000000 1px solid;
+    margin: -1px auto;
+    width: 75%;
+    height: 490px;
+}
+.box{
+    display: block;
+    width: 600px;
+    height: 300px;
+    border: #414c4d 1px solid;
+    border-radius: 25px;
+    margin: 80px auto;
+}
+.box .img_kun{
+    margin: 20px;
+    border: #000000 1px solid;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url(../image/rap.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box .text{
+    display: inline-block;
+    position: relative;
+    top: -250px;
+    left: 370px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.img_qq{
+    display: block;
+    margin: 20px;
+    border-radius: 10px;
+    width: 120px;
+    height: 90px;
+    background-image: url(../image/QQ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -160px;
+    left: 358px;
+}
+.box .text1{
+    display: inline-block;
+    position: relative;
+    top: -200px;
+    left: 180px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.box .text2{
+    display: inline-block;
+    position: relative;
+    top: -150px;
+    left: -6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#footer{
+    width: 99.9%;
+    height: 54px;
+    background-image: linear-gradient(#bccecf,#bccecf);
+    margin-top: -5px;
+    border: 1px solid #000000;
+}
+.footer_box{
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px auto;
+}

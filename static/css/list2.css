@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    margin: 10px auto;
+    padding: 10px;
+    height: 300px;
+    width: 1200px;
+    border: 1px solid #000000;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_bg{
+    width: 99.9%;
+    height: 55px;
+    background-image: linear-gradient(#53dae4,#53dae4);
+    margin-top: -5px;
+    border: 1px solid #000000;
+}
+#nav_div{
+    width: 1200px;
+    height: 48px;
+    margin: 0px auto;
+}
+.nav_a{
+    display: inline-block;
+    border: #000000 1px solid;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 85px;
+    height: 45px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    margin:3.5px 100px;
+    background-color: #d8d2d2;
+}
+.nav_a:hover{
+    color: #414c4d;
+}
+
+#content{
+    border: #000000 1px solid;
+    margin: -1px auto;
+    width: 75%;
+    height: 490px;
+}
+.text{
+    display: block;
+    margin: 10px;
+    line-height: 36px;
+}
+.text h1,h3,h4{
+    text-align: center;
+    color: #000000;
+}
+.text p{
+    text-indent: 30px;
+    line-height: 30px;
+    font-size: 1.05rem;
+}
+.img{
+    float: left;
+    width: 200px;
+    height: 195px;
+    margin: 10px;
+    border: 1px solid #414c4d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/ikun.jfif);
+    border-radius: 10px;
+}
+.aa{
+    text-decoration: none;
+    color: #000000;
+    border: #414c4d 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    top: -72px;
+    left: 65px;
+}
+.aa:hover{
+    background-color: #53dae4;
+    color: #7b8075;
+}
+#footer{
+    width: 99.9%;
+    height: 54px;
+    background-image: linear-gradient(#bccecf,#bccecf);
+    margin-top: -5px;
+    border: 1px solid #000000;
+}
+.footer_box{
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px auto;
+}
