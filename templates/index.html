@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- │-------------------------│
          │-----------★------------│
          │-------Django Web--------│
@@ -11,8 +10,7 @@
          │-------------------------│ -->
 
     <title>实验一</title>
-    {% load static %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/i-kirito/Django-Web@0.0.2/static/css/index.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/index.css" type="text/css">
     <script src="https://cdn.jsdelivr.net/gh/i-kirito/Django-Web@0.0.2/static/js/index.js" type="text/javascript"></script>
 </head>
 
@@ -36,10 +34,6 @@
         </div>
     </div>
     <!-- 底部 -->
-    <div id="footer">
-        <div class="footer_box">
-            数字经济产业学院 电子商务2003 202004070102 梁文豪  版权@ikirito（网名）
-        </div>
-    </div>
+    {% include 'footer.html' %}
 </body>
 </html>
