@@ -16,7 +16,7 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     # execute_from_command_line(sys.argv)
-    execute_from_command_line(['manage.py','runserver','10.23.172.134:80'])
+    execute_from_command_line(['manage.py','runserver','0.0.0.0:8000'])
 
 from django.core.management.commands.runserver import Command as Runserver
 if __name__ == '__main__':
