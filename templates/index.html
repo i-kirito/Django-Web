@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,16 @@
          │-----------★------------│
          │-------Django Web--------│
          │---------ikirito---------│
-         │-------------------------│ -->
-
+         │-------------------------│ -->{%load static%}
     <title>实验一</title>
-    <link rel="stylesheet" href="../static/css/index.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/gh/i-kirito/Django-Web@0.0.2/static/js/index.js" type="text/javascript"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
 </head>
 
 <body>
     <!-- 头部开始 -->
-    <div id="header" style="background-image: url(../static/image/logo.png);">MC</div>
+    <div id="header" style="background-image: url({% static 'image/logo.png' %});">MC</div>
     <!-- 头部结束 -->
     <!-- 导航栏 -->
     <div class="nav_bg">
@@ -36,4 +37,5 @@
     <!-- 底部 -->
     {% include 'footer.html' %}
 </body>
+
 </html>

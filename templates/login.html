@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ikirito-注册与登录</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="images/x-icon"
+        href="https://cdn.jsdelivr.net/gh/i-kirito/cdn@1.2.5/images/2021/02/favicon-1.png">
+    <style type="text/css">
+        body {
+            cursor: url("../img/cursor.cur"), auto;
+        }
+
+        a {
+            cursor: url("../img/pointer.cur"), pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <!-- 注册 -->
+        <div class="container_form container_signup">
+            <form action="#" method="post" class="form" id="form1">
+                <h2 class="form_title">注册账号</h2>
+                <input type="text" placeholder="User" class="input" id="sign_user" maxlength="16" />
+                <input type="email" placeholder="Email" class="input" id="sign_email" />
+                <input type="password" placeholder="Password" class="input" id="sign_password" />
+                <submit class="btn" id=alert_btn1 onclick="sign()">点击注册</submit>
+            </form>
+        </div>
+        <!-- 登录 -->
+        <div class="container_form container_signin">
+            <form action="/result" method="get" class="form" id="form2">
+                <h2 class="form_title">欢迎登录</h2>
+                <input type="text" placeholder="User" class="input" id="login_user" maxlength="16" name="user" />
+                <input type="password" placeholder="Password" class="input" id="login_password" name="password" />
+                <a href="#" class="link">忘记密码？</a>
+                <input type="submit" value="登录" class="btn" id=1 onclick="sign()">
+            </form>
+        </div>
+
+        <div class="overlay_panel overlay_left">
+            <img src="{% static 'img/niko.gif' %}" class="yuan">
+            <button class="btn" id="signIn">已有账号，直接登录</button>
+        </div>
+        <div class="overlay_panel overlay_right">
+            <img src="{% static 'img/niko.gif' %}" class="yuan">
+            <button class="btn" id="signUp">没有账号，点击注册</button>
+        </div>
+    </main>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script>
+        swal('欢迎你，此页面为隐藏页面！', '注册功能后端开发中~', 'success');
+    </script>
+    <script type="text/javascript" src="js/poplayer.js"></script>
+    <script>
+        //确定关闭提示框
+        document.getElementById("alert_btn1").onclick = function () {
+            // 调用插件
+            poplayer.alert('暂停开放注册');
+        };
+        //确定关闭提示框
+        document.getElementById("alert_btn2").onclick = function () {
+            // 调用插件
+            poplayer.alert('还未完成注册');
+        };
+    </script>
+
+</body>
+
+</html>
