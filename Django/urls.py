@@ -19,7 +19,11 @@ from django.views.generic.base import RedirectView
 
 from . import views
 
+
+
+
 urlpatterns = [
+    # ... 其它URL配置
     path("admin/", admin.site.urls),
     path("index/", views.index),
     path("login/", views.login),

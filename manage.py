@@ -15,12 +15,12 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
-    # execute_from_command_line(sys.argv)
-    execute_from_command_line(['manage.py','runserver','0.0.0.0:8000','--insecure'])
+    execute_from_command_line(sys.argv)
+    # execute_from_command_line(['manage.py','runserver','127.0.0.1:8000','--insecure'])
 
 from django.core.management.commands.runserver import Command as Runserver
 if __name__ == '__main__':
-    Runserver.default_addr = '0.0.0.0'	# 修改默认地址
-    Runserver.default_port = '80'	# 修改默认端口
+    Runserver.default_addr = '127.0.0.1'	# 修改默认地址
+    Runserver.default_port = '8000'	# 修改默认端口
     
     main()

@@ -27,7 +27,7 @@
         <div class="container_form container_signup">
             <form action="#" method="post" class="form" id="form1">
                 <h2 class="form_title">注册账号</h2>
-                <input type="text" placeholder="User" class="input" id="sign_user" maxlength="16" />
+                <input type="text" autocomplete="off" placeholder="User" class="input" id="sign_user" maxlength="16" />
                 <input type="email" placeholder="Email" class="input" id="sign_email" />
                 <input type="password" placeholder="Password" class="input" id="sign_password" />
                 <submit class="btn" id=alert_btn1 onclick="sign()">点击注册</submit>
@@ -37,7 +37,7 @@
         <div class="container_form container_signin">
             <form action="/result" method="get" class="form" id="form2">
                 <h2 class="form_title">欢迎登录</h2>
-                <input type="text" placeholder="User" class="input" id="login_user" maxlength="16" name="user" />
+                <input type="text" autocomplete="off" placeholder="User" class="input" id="login_user" maxlength="16" name="user" />
                 <input type="password" placeholder="Password" class="input" id="login_password" name="password" />
                 <a href="#" class="link">忘记密码？</a>
                 <input type="submit" value="登录" class="btn" id=1 onclick="sign()">
